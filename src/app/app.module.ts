@@ -8,6 +8,7 @@ import { AddReceipeComponent } from './add-receipe/add-receipe.component';
 import { FormsModule } from "@angular/forms";
 import { RouterModule, Routes } from '@angular/router';
 import { ViewReceipeComponent } from './view-receipe/view-receipe.component';
+import { HttpClientModule } from "@angular/common/http";
 
 const appRoutes:Routes=[
   {
@@ -28,7 +29,8 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
