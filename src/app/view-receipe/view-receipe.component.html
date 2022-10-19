@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+      <tr>
+        
+        <th scope="col">Reciepe Name</th>
+        <th scope="col">Ingredients</th>
+        <th scope="col">Category</th>
+        <th scope="col">Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of reciepData">
+        
+        <td>{{i.reciepe_name}}</td>
+        <td>{{i.ingredients}}</td>
+        <td>{{i.category}</td>
+        <td>{{i.duration}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
